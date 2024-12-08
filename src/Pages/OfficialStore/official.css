@@ -1,0 +1,36 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.officialParent {
+    width: 100%;
+    height: 120vh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.official {
+    width: 100%;
+    height: 8vh;
+    background-color: #276076;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.officialText {
+    padding: 5px;
+}
+
+.officialImg {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+}

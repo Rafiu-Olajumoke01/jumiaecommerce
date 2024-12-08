@@ -1,0 +1,31 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.mobileParent {
+    width: 100%;
+    height: 60vh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.mobile {
+    width: 100%;
+    height: 8vh;
+    background-color: #FF550C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.mobileText {
+    width: 100%;
+    text-align: center;
+}

@@ -1,0 +1,37 @@
+.NewBanner {
+    width: 100%;
+    height: 95vh;
+    display: flex;
+   flex-direction: column;
+   gap: 20px;
+   /* align-items: center; */
+
+}
+
+.firstBanner {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+.firstBanner img {
+    width: 1000px;
+    height: auto;
+
+}
+
+.secondBanner {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+.secondBanner img {
+    width: 1000px;
+    height: auto;
+
+}

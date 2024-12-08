@@ -1,0 +1,31 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.beverageParent {
+    width: 100%;
+    height: 60vh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.beverage {
+    width: 100%;
+    height: 8vh;
+    background-color: #FF550C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.beverageText {
+    width: 100%;
+    text-align: center;
+}
