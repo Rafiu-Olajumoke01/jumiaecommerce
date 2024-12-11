@@ -37,3 +37,12 @@
 .btn-primary:hover{
     background-color: #FF6633;
 }
+
+@media (max-width: 768px) {
+    .beautyParent {
+        flex-direction: column;
+        align-items: center;
+        height: 590vh;
+        background-color: red;
+    }
+}

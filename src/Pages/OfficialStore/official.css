@@ -34,3 +34,9 @@
     height: 40vh;
     object-fit: cover;
 }
+
+@media (max-width: 768px) {
+    .officialParent{
+       display: none;
+    }
+}

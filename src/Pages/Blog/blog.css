@@ -29,3 +29,9 @@ h6 {
     margin-bottom: 20px;
     font-weight: bold;
 }
+
+@media (max-width: 768px) {
+    .JumiaBlog {
+        height: 100vh;
+    }
+}

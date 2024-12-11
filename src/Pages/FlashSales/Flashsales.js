@@ -26,7 +26,7 @@ function Flashsales() {
                 <div className="container-fluid Itemsdisplayed">
                     <div className="row">
                         {flashsale.map(product => (
-                            <Link className="col-lg-2 itemBox" key={product.id}>
+                            <Link className="col-lg-2  itemBox" key={product.id}>
                                 <div className="card mt-3">
                                     <img src={product.image} alt={product.name} className='img-fluid card-img-top' />
                                     <div className="card-body product_item">

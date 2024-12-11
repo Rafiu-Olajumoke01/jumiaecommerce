@@ -29,3 +29,11 @@
     width: 100%;
     text-align: center;
 }
+
+@media (max-width: 768px) {
+    .beverageParent{
+        height: 270vh;
+        /* flex-direction: column-reverse; */
+
+    }
+}   

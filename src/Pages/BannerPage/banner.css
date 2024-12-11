@@ -2,7 +2,7 @@
     width: 100%;
     height: 30vh;
     margin-bottom: 10%;
-    
+
 }
 
 .banner img {
@@ -12,4 +12,10 @@
     /* filter: brightness(120%); */
     transition: filter 1s;
 
+}
+
+@media (max-width: 768px) {
+    .banner {
+        display: none;
+    }
 }

@@ -35,3 +35,9 @@
     height: auto;
 
 }
+
+@media (max-width: 768px) {
+    .NewBanner{
+       display: none;
+    }
+}   

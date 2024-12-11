@@ -21,10 +21,10 @@ function SecondNav() {
                 </div>
 
                 <div className="cartIcons">
-                    <div className="account">
+                    <Link className="account" to={'/signup'}>
                         <CiUser size={30} fontWeight={50} />
                         <span>Account</span>
-                    </div>
+                    </Link>
 
                     <div className="help">
                         <LuHelpCircle size={30} fontWeight={50} />
@@ -32,11 +32,15 @@ function SecondNav() {
                     </div>
 
                     <div className="cart">
-                        <MdOutlineShoppingCart size={30} fontWeight={50} className='addToCart'/>
+                        <MdOutlineShoppingCart size={30} fontWeight={50} className='addToCart' />
                         <span>Cart</span>
                     </div>
                 </div>
             </div>
+
+            {/* <div className='smallScreenInp'>
+                <input type="text" />
+            </div> */}
 
         </div>
     )

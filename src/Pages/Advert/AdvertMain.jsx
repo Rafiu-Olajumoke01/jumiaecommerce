@@ -8,7 +8,7 @@ function AdvertMain() {
   
   
   return (
-    <div>
+    <div className='product'>
       <div className="container-fluid parent">
       <div className="row">
           {Advert.map(product => (

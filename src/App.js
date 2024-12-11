@@ -19,6 +19,7 @@ const MobilePhone= React.lazy(() => import("./Pages/MobilePhones/Index"))
 const TopHomedeals= React.lazy(() => import("./Pages/TopHomedeals/Index")) 
 const  SideBar= React.lazy(() => import("./Pages/SideBar/Sidebar")) 
 const  Slider= React.lazy(() => import("./Pages/Slider/Slider")) 
+const  SignUp= React.lazy(() => import("./Pages/SignUp/Signup")) 
 const  FlashSales= React.lazy(() => import("./Pages/FlashSales/Flashsales")) 
 const  OfficialStore= React.lazy(() => import("./Pages/OfficialStore/Official")) 
 const  SecondBanner= React.lazy(() => import("./Pages/SecondBanner/BannerSecond")) 
@@ -45,6 +46,7 @@ function App() {
             <Route path='/TopHomedeals' element={<TopHomedeals />} />
             <Route path='/SideBar' element={<SideBar />} />
             <Route path='/Slider' element={<Slider />} />
+            <Route path='/SignUp' element={<SignUp />} />
             <Route path='/FlashSales' element={<FlashSales />} />
             <Route path='/OfficialStore' element={<OfficialStore />} />
             <Route path='/SecondBanner' element={<SecondBanner />} />
