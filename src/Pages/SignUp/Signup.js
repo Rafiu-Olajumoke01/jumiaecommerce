@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { FaFacebookF } from "react-icons/fa";
 import './Signup.css'
 
 
@@ -19,9 +20,9 @@ function Signup() {
                     <p>By continuing you agree to Jumia’s</p>
                     <Link>By continuing you agree to Jumia’s</Link>
                 </div>
-             
+
                 <div className="facebook">
-                    <img src="facebook.png" alt="Facebook" />
+                    <FaFacebookF />
                     <Link>Sign in with Facebook</Link>
                 </div>
             </div>
