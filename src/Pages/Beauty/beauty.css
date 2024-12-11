@@ -43,6 +43,6 @@
         flex-direction: column;
         align-items: center;
         height: 590vh;
-        background-color: red;
+        /* background-color: red; */
     }
 }

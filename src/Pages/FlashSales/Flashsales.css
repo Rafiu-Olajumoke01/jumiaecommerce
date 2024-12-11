@@ -58,12 +58,12 @@
 @media (max-width: 768px) {
     /* For screens smaller than 768px */
     .flashParent {
-        margin-top: 10%;
+        margin-top: 13%;
         flex-direction: row;
         flex-wrap: wrap;
         height: auto;
         padding: 10px;
-        background-color: yellow;
+        /* background-color: yellow; */
         justify-content: center;
         align-items: center;
         color: #333;
