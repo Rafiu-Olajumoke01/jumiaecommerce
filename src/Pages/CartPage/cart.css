@@ -5,7 +5,7 @@
 
 .shoppingCart {
     width: 100%;
-    height: 100vh;
+    height: fit-content;
     background-color: #F1F1F2;
 }
 
@@ -16,6 +16,10 @@
     text-align: center;
     margin-bottom: 20px;
     margin-top: 20px;
+}
+
+.startShopping p {
+    text-align: center;
 }
 
 .cartBox {
@@ -32,11 +36,13 @@
 .startShopping p {
     color: #2c2929;
 }
+
 .cartBtnParent {
     text-align: center;
     margin-top: 30px;
 
 }
+
 .cartBtn {
     background-color: #FF9300;
     border: none;
@@ -51,4 +57,122 @@
 
 .cartBtn:hover {
     background-color: #E07E1B;
+}
+
+.cartItemImage img {
+    width: 150px;
+    height: auto;
+    margin-top: 15px;
+}
+
+.cartItemImage {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.removebtn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent !important;
+}
+
+.removebtn button {
+    background-color: transparent !important;
+    border: none;
+    color: #fff;
+    font-weight: bolder;
+    transition: .7s;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.removebtn p {
+    margin-right: 10px;
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+h2 {
+    color: #2c2929;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+.cartItem {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.imageAndCart {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    width: 70%;
+    padding: 10px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card-name {
+    font-size: 25px;
+    margin-left: 10px;
+    font-weight: bold;
+    color: black;
+}
+
+.card-description {
+    font-size: 15px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+.cartItemQuantity button {
+    background-color: #FF9300;
+    border: none;
+    color: #fff;
+    font-weight: bolder;
+    transition: .7s;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin: 5px;
+}
+
+.cartItemQuantity button:hover {
+    background-color: #E07E1B;
+}
+
+.cartItemTotal {
+    font-weight: bold;
+}
+
+.cartItemQuantity input {
+    width: 70px;
+    text-align: center;
+    padding: 5px;
+    border: none;
+}
+
+.cartSummary {
+    width: 25%;
+    background-color: #FFFFFF;
+    padding: 20px;
+}
+
+.cartSummary button {
+    width: 100%;
+    background-color: #FF9300;
+    border: none;
+    color: #fff;
+    font-weight: bolder;
+    transition: .7s;
+    cursor: pointer;
+    padding: 10px 15px;
+    margin-top: 20px;
+    border-radius: 5px;
 }

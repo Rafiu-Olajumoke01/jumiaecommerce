@@ -1,22 +1,20 @@
 import React, { useState, useEffect } from 'react'
+import { useSelector, useDispatch } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { allproducts } from "./../ProductPage/Product"
+import cartSlice from './../../store/cart/cartSlice'
+import { addItemCart } from './../../store/cart/cartSlice'
+import { removeItemCart } from './../../store/cart/cartSlice'
+
 import './electronic.css'
 
 
 function ElectronicMain() {
   const electronic = allproducts.filter(product => product.category === 'Electronics')
-  // const [cart, setCart] = useState([])
 
-  // const removeFromCart = (itemId) => {
-  //   const updatedCart = cart.filter(item => item.id !== itemId);
-  //   setCart(updatedCart);
-  // }
-  // const addToCart = (item) => {
-  //   setCart([...cart, item]);
-  //   console.log('Added to cart:', item);
-  // }
+  const cart = useSelector((state) => state.cart.cartItem)
 
+  const dispatch = useDispatch()
 
   return (
     <div>
@@ -36,14 +34,22 @@ function ElectronicMain() {
                       <h5 className="card-title">{product.name}</h5>
                       <p className="card-text promo_price">{product.price}</p>
                       <Link className='previousSale'>{product.previousSale}</Link>
-                      <Link className='btn btn-primary'>Add to Cart</Link>
+                      <div className='btn btn-primary' onClick={() => dispatch(addItemCart(product))}>Add to Cart</div>
                     </div>
                   </div>
-
                 </div>
               </Link>
             ))}
           </div>
+        </div>
+
+        <div className='cart_display'>
+          <h5>Cart ({cart.length})</h5>
+          {cart.map(item => (
+            <div key={item.id}>
+              <div>{item.name} - ${item.price}</div>
+            </div>
+          ))}
         </div>
       </div>
     </div>

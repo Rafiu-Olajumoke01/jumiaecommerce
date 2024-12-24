@@ -2,11 +2,17 @@ import React from 'react'
 import { allproducts } from "./../ProductPage/Product"
 import { Link } from 'react-router-dom'
 import "./official.css"
+import { useSelector, useDispatch } from 'react-redux'
+import cartSlice from './../../store/cart/cartSlice'
+import { addItemCart } from './../../store/cart/cartSlice'
+import { removeItemCart } from './../../store/cart/cartSlice'
 
 function Mobilemain() {
   const officialstore = allproducts.filter(product => product.category === 'OfficialStore')
 
+  const cart = useSelector((state) => state.cart.cartItem)
 
+  const dispatch = useDispatch()
   return (
     <div>
       <div className="officialParent">
@@ -22,7 +28,7 @@ function Mobilemain() {
                   <img src={product.image} alt={product.name} className='img-fluid card-img-top officialImg' />
                   <div className="card-body product_item">
                     <div className='promo_details'>
-                      <Link className='btn btn-primary'>Add to Cart</Link>
+                    <div className='btn btn-primary' onClick={() => dispatch(addItemCart(product))}>Add to Cart</div>
                     </div>
                   </div>
 

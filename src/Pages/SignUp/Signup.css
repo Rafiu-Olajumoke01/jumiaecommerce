@@ -9,3 +9,98 @@ body {
     height: 100vh;
     background-color: #fff !important;
 }
+
+.signing {
+    width: 50%;
+    height: 70vh;
+    background-color: #fff;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.image img {
+    width: 90px;
+    height: auto;
+}
+
+.form-inp {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.form-inp input {
+    width: 70%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    outline: none;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    transition-property: background-color, border-color;
+    margin-bottom: 40px;
+}
+
+.form-inp input::placeholder {
+    color: rgb(243, 207, 139);
+}
+
+.login-btn {
+    width: 70%;
+    padding: 10px 20px;
+    background-color: #F9A03D;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    font-weight: bolder;
+}
+
+.login-btn:hover {
+    background-color: #F88F2F;
+}
+
+h6 {
+    font-size: 14px;
+ 
+}
+
+.termsandconditions {
+    font-size: 12px;
+    color: #F88F2F;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.facebook {
+    width: 70%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #2A82F3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    font-weight: bolder;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.fb {
+    margin-top: 12px;
+}
+
+/* .customer_service {
+    width: 70%;
+} */
+
+.customercare {
+    width: 100%;
+    margin-top: 20px
+}

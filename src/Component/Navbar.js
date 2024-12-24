@@ -9,7 +9,7 @@ import "./Navbar.css"
 function SecondNav() {
     return (
         <div className=''>
-            <div className="jumiaLogoParent">
+            <div className="jumiaLogoParent ">
                 <div className="jumiaLogo">
                     <img src={require("./../Images/Jumia-Logo3-removebg-preview.png")} alt="" />
                 </div>
@@ -31,10 +31,10 @@ function SecondNav() {
                         <span>Help</span>
                     </div>
 
-                    <div className="cart">
+                    <Link className="cart" to={'/cart'}>
                         <MdOutlineShoppingCart size={30} fontWeight={50} className='addToCart' />
                         <span>Cart</span>
-                    </div>
+                    </Link>
                 </div>
             </div>
 
