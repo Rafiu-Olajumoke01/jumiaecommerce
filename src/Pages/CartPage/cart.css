@@ -132,6 +132,7 @@ h2 {
     margin-left: 10px;
     font-weight: bold;
 }
+
 .cartItemQuantity button {
     background-color: #FF9300;
     border: none;
@@ -175,4 +176,26 @@ h2 {
     padding: 10px 15px;
     margin-top: 20px;
     border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .cartItem {
+        flex-direction: column;
+    }
+
+    .cartItemQuantity {
+        margin-top: 10px;
+    }
+
+    .descriptionText {
+        display: none;
+    }
+
+    .imageAndCart {
+        width: 100%;
+    }
+
+    .cartSummary {
+        width: 100%;
+    }
 }
